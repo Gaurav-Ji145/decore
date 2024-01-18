@@ -1,0 +1,319 @@
+{%  load static %}
+
+<html lang="en">
+
+<head>
+    <title>कथाएं</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="{% static 'assets/CSS/font-awesome.min.css'%}" />
+
+    <link rel="stylesheet" href="{% static 'assets/css/aos.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/main.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/style2.css'%}"/>
+
+    <!--owl carousel-->
+    <link type="text/css" rel="stylesheet" href="{% static 'assets/CSS/owl.carousel.min.css'%}" />
+    <link type="text/css" rel="stylesheet" href="{% static 'assets/CSS/owl.theme.default.min.css'%}" />
+
+    <link type="image" rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/800px-Flag_of_India.svg.png?20111003033457" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="arrow">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="{% url 'main:katha' %}">
+                        <h2>कथाएं..</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a class="menu_hover" href="{% url 'main:index' %}">Home</a></li>
+                        <li><a class="menu_hover" href="#slides_parent">Our Events</a></li>
+                        <li><a class="menu_hover" href="#explore-fiji">Join With Us</a></li>
+                        <li><a class="menu_hover" href="#gallery">Gallery</a></li>
+                        <li><a class="menu_hover" href="#fiji-holyday">Our Pride</a></li>
+                        <!--<li><a class="menu_hover" href="#blog">Contact Us</a></li>-->
+                    </ul>
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="conatiner">
+            <div class="home_header_info">
+                <h1 class="typewrite" data-period="2000" data-type='[ "Incredible!ndia", "हिन्दू पौराणिक कथाएँ !", " Explore the Indian Culture and Rituals." ]'></h1>
+                <p>Hinduism is unique in that it’s not a single religion but a compilation of many traditions and philosophies: Hindus worship a number of different gods and minor deities, honor a range of symbols, respect several different holy books and celebrate with a wide variety of traditions, holidays and customs.</p>
+            </div>
+        </div>
+        <div class="video">
+            <video id="video" autoplay loop muted>
+                <source type="video/mp4" src="{% static 'assets/image/v1.mp4'%}" />
+            </video>
+        </div>
+    </header>
+
+    <Section id="welcome_Sec">
+        <div class="container">
+            <h2><span>we are providing
+            </span></h2>
+            <p>Hinduism includes a wide range of beliefs or Things  about God and divinity</p>
+        </div>
+    </Section>
+
+    <Section id="slides_parent">
+        <div class="container">
+            <div class="slides">
+                <div class="slide_1" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('static/assets/image/recipe_slides/i1.jpg');">
+                    <div class="slide_info">
+                        <p>Bhagwat Kathaen </p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('static/assets/image/recipe_slides/i2.jpg');">
+                    <div class="slide_info">
+                        <p>Shiv Puraan</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_3" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('static/assets/image/recipe_slides/i3.jpg');">
+                    <div class="slide_info">
+                        <p>Ganesh Pooja</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('static/assets/image/recipe_slides/i4.jpg');">
+                    <div class="slide_info">
+                        <p>Navratri Pooja</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_5" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('static/assets/image/recipe_slides/i5.jpg');">
+                    <div class="slide_info">
+                        <p>Hanumaan Katha</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_6" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('static/assets/image/recipe_slides/i6.jpg');">
+                    <div class="slide_info">
+                        <p>Jagran</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_7" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('static/assets/image/recipe_slides/i7.jpg');">
+                    <div class="slide_info">
+                        <p>Havan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <section id="explore-fiji">
+       <center><h1> find your Location For Booking</h1></center> 
+       <br><br>
+       <center><p><h4>This map depicts the location for you <br> Click on any pointer to learn more about the place and to appreciate the diversity!</h4></p></center>
+     <br><br><center> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rWVL7-ObutJZd9PlLtzqS4kounhEzHg&ehbc=2E312F" width="60%" height="480"></iframe></center>
+    </section>
+
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+
+                <div class="filter-gal-par">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="{% static 'assets/image/fiji-surprise/f1.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="{% static 'assets/image/fiji-surprise/f2.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="{% static 'assets/image/fiji-surprise/f3.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="{% static 'assets/image/fiji-surprise/h1.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="{% static 'assets/image/fiji-surprise/h2.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="{% static 'assets/image/fiji-surprise/h3.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="{% static 'assets/image/fiji-surprise/p1.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="{% static 'assets/image/fiji-surprise/p2.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="{% static 'assets/image/fiji-surprise/p3.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="{% static 'assets/image/fiji-surprise/g1.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="{% static 'assets/image/fiji-surprise/g2.jpg'%}" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="{% static 'assets/image/fiji-surprise/g3.jpg'%}" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fiji-holyday">
+        <div class="container">
+            <h3>The Best From Our Sides</h3>
+            <ul class="card-wrapper">
+  <li class="card">
+    <img src="{% static 'assets/image/slider/1.jpg'%}" alt=''>
+    <h3><a href="">Bhagwat</a></h3>
+    <p>𝕃𝕠𝕣𝕕 𝕂𝕣𝕚𝕤𝕙𝕟𝕒💖🙏🌼</p>
+  </li>
+  <li class="card">
+    <img src="{% static 'assets/image/slider/2.jpg'%}" alt=''>
+    <h3><a href="">Jagran</a></h3>
+    <p>𝖦𝗈𝖽𝖽𝖾𝗌𝗌 𝖫𝖺𝗄𝗌𝗁𝗆𝗂, Durga, Kali,ℕ𝕒𝕧𝕣𝕒𝕥𝕣𝕚 💖🙏🌼 </p>
+  </li>
+  <li class="card">
+    <img src="{% static 'assets/image/slider/3.jpg'%}" alt=''>
+    <h3><a href="">Ganesh Pooja</a></h3>
+    <p>𝐋𝐨𝐫𝐝 𝐆𝐚𝐧𝐞𝐬𝐡𝐚 💖🙏🌼</p>
+  </li>
+</ul>
+<!--             <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/slider/delhi.jpg" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Delhi</h3>
+                            <p>The Capital City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/slider/mumbai.jpg" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Mumbai</h3>
+                            <p>The Financial Capital</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/slider/banglore.jpg" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Banglore</h3>
+                            <p>The Silicon Valley</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/slider/kolkata.jpg" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Kolkata</h3>
+                            <p>City of Joy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/slider/jammu.jpg" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Jammu</h3>
+                            <p>The heaven of World</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/slider/delhi.jpg" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Delhi</h3>
+                            <p>Capital City</p>
+                        </div>
+                    </div> 
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-par">
+                <div class="footer-1">
+                    <h2>Explore with us</h2>
+                    <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
+                <div class="footer-2 fot-info">
+                    <h3>About God</h3>
+                    <ul>
+                        <li>Indian Culture</a></li>
+                        <li>Rituals</a></li>
+                        <li>Festivals</li>
+                        <li>Himduism</a></li>
+                    </ul>
+                </div>
+                <div class="footer-3 fot-info">
+                    <h3>Visit For More</h3>
+                        <li>BhaktiBharat<a href="https://www.bhaktibharat.com/katha/kunti-ne-shrikrishna-se-upahar-mein-dukh-kyon-manga"></a></li>
+                        <li>Pujaabhishekam<a href="https://www.pujaabhishekam.com/puja/navratri-puja"></a></li>
+                        <li>Pujaabhishekam<a href="https://www.pujaabhishekam.com/puja/ganesh-puja"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-4 fot-info">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Gaurav</a></li>
+                        <li>Sheetal</a></li>
+                        <li>Kamal</a></li>
+                        <li>Varsha</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Developed by Decore event Team Team</p>
+    </footer>
+
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/extrenaljq.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+{%  load static %}
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Birthday Decoration</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'assets/css/css/bootstrap.min.css'%}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'assets/css/css/style.css'%}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'assets/css/css/responsive.css'%}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'assets/image/fevicon.png'%}"  />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'assets/css/css/jquery.mCustomScrollbar.min.css'%}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'assets/image/loading.gif'%}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header class="full_bg">
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="{% url 'main:birthday' %}">Birthday Decoration</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="{% url 'main:index' %}">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#about">About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#best">Best From Us</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#service">Services</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#find">Find Us</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#review">Riview</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end header inner -->
+         <!-- end header -->
+         <!-- banner -->
+         <section class="banner_main" id="home">
+            <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
+               <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <div class="carousel-caption  banner_po">
+                           <div class="row">
+                              <div class="col-lg-8 col-md-9 ">
+                                 <div class="build_box">
+                                    <h1>Come join us in making this day <span class="orang">🌸Unforgettable🌸...</span></h1>
+                                    <p><b>"Get ready for a day filled with joy, laughter, and wonderful memories. Your presence will make it even more special. Come and enjoy your birthday with us!" 🎉🎂🥳</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="carousel-caption banner_po">
+                           <div class="row">
+                              <div class="col-lg-8 col-md-9 ">
+                                 <div class="build_box">
+                                    <h1>Make Your Special Day More S[pecial <span class="orang"> 🌸 W𝓲𝓽𝓱 𝓊𝓈 🌸...</span></h1>
+                                    <p><b>"Celebrate with us and let the good times roll on your special day! Your birthday bash won't be complete without you. Join us for a fantastic time!" 🎉🎂🥳</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="carousel-caption banner_po">
+                           <div class="row">
+                              <div class="col-lg-8 col-md-9 ">
+                                 <div class="build_box">
+                                    <h1>Come enjoy the spotlight and celebrate your birthday <span class="orang"> 🌸 W𝓲𝓽𝓱 𝓊𝓈 🌸...</span></h1>
+                                    <p><b>"Your birthday is the reason to gather, laugh, and create unforgettable moments. Come, celebrate with us, and let's make this day extraordinary!" 🎈🎂🎉</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </section>
+      </header>
+      <!-- end banner -->
+      <!-- play -->
+      <div class="section" id="best" >
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+                  <div class="play_btn text_align_center">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end play -->
+      <!-- our plane -->
+      <div class="plane">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="titlepage">
+                     <h2>Our Best Thing For you..❣️</h2>
+                     <span>Here's the plan for your birthday: Fun, laughter, surprises, and a day filled with joy! Join us in making this celebration one for the books. Let's create wonderful memories together!" 🎉🎂🥳 </span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="plan_bax text_align_center">
+                     <figure><img src="{% static 'assets/image/plan_img.jpg'%}" alt="#"/></figure>
+                     <div  id="ho_plan" class="plan_text">
+                        <h3>Birthday DECORATIONS....❤️🌼</h3>
+                        <p>"Decoration sets the stage for an unforgettable birthday celebration! we adorn the day with colors, lights, and magic. Your presence will make it complete! We make Your Special day more special " 🎈🌟🎂🥳 </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="plan_bax text_align_center">
+                     <figure><img src="{% static 'assets/image/plan_img1.jpg'%}" alt="#"/></figure>
+                     <div  id="ho_plan" class="plan_text">
+                        <h3>BEST Location....💖🏞️</h3>
+                        <p>"Choosing the perfect location is the first step in crafting a memorable birthday experience. Join us at this incredible venue, where every moment becomes a cherished memory. Your presence will make it truly special!" 🎂🎈🏞️🥳 </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="plan_bax text_align_center">
+                     <figure><img src="{% static 'assets/image/plan_img2.jpg'%}" alt="#"/></figure>
+                     <div  id="ho_plan" class="plan_text">
+                        <h3>Make You Feel Special....💝🌹</h3>
+                        <p>"Today is all about making you feel incredibly special. Join us for your birthday celebration, where every detail is tailored to honor and cherish you. Your presence adds the magic to this extraordinary day!" 🎂🎈🌟🥳 </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- our plane -->
+      <!-- groomsmen -->
+      <div class="groomsmen" id="service">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="titlepage">
+                     <h2>Some Additional Things We provide</h2>
+                     <span> </span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="brid text_align_center">
+                     <figure><img src="{% static 'assets/image/ber_img.jpg'%}" alt="#"/></figure>
+                     <h3>"Gifts are tokens of affection, conveying to the birthday celebrant that they are cherished and valued. On birthdays, gifts can symbolize milestones achieved and the anticipation of new adventures ahead."<div class="3 3 3 3 3">
+
+                     </div>  </h3>
+                  </div>
+               </div>
+               <div class="col-md-4 margin_top70">
+                  <div class="brid text_align_center">
+                     <figure><img src="{% static 'assets/image/ber_img1.jpg'%}" alt="#"/></figure>
+                     <h3>"Delicious food is the heart of any great birthday celebration, bringing friends and family together to savor the moment.From savory appetizers to sweet treats, a well-curated menu can turn your birthday bash into a culinary adventure" x </h3>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="brid text_align_center">
+                     <figure><img src="{% static 'assets/image/ber_img2.jpg'%}" alt="#"/></figure>
+                     <h3> celebrating a birthday, accept decoration we  provide additional things like cake, gifts, and music to make the celebration more special and enjoyable.Music can make day Amazing and  more special </h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- groomsmen -->
+      <!-- about -->
+      <div class="about" id="about">
+         <div class="container ">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="titlepage">
+                     <h2>About Us</h2>
+                     <span>At [Decore Event ], we believe that every space deserves to be beautiful, and every occasion deserves to be celebrated in style. With a passion for aesthetics and a commitment to creativity, we've made it our mission to transform ordinary spaces into extraordinary experiences.Decore Event was born out of a love for design and an appreciation for the power of decor to elevate any setting. What started as a small endeavor has grown into a thriving hub for all things decoration.
+                        Our journey has been one of constant innovation and dedication to our craft. We've scoured the globe for the finest materials, collaborated with talented artisans, and honed our expertise to curate a collection of decor that's as diverse as our clients' tastes.</span>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="about_img">
+                     <figure><img src="{% static 'assets/image/about.png'%}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!-- blog -->
+      <div class="blog" style="background-color: rgb(231, 137, 236);">
+         <div class="container ">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Find Us On Social Media</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row" style="background-color: rgb(231, 137, 236);">
+               <div class="col-sm-12">
+                  <div class="blog_bg margin_bottom30">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <div class="blog_img">
+                              <figure><img src="{% static 'assets/image/blog_img1.jpg'%}" alt="#"/></figure>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="marriage_text">
+                              <span>Post by : Decore Events </span>
+                              <h3>"Celebrating another trip around the sun in style! </h3>
+                              <p>"Transform Your Space with Elegance and Style! Discover the Best in Decor at [Decore Event].Creating Dreamy Spaces – Explore Our Stunning Décor Collection Today Turning Spaces into Masterpieces. Discover Our Exclusive Decoration Services Today"</p>
+                              <h4><strong>Like</strong> <strong class="padd_right">Comment</strong></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-12" id="find">
+                  <div class="blog_bg">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <div class="blog_img">
+                              <figure><img src="{% static 'assets/image/blog_img2.jpg'%}" alt="#"/></figure>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="marriage_text">
+                              <span>Post by : Decore Event </span>
+                              <h3>"Cheers to another year of making memories and blowing out candles! </h3>
+                              <p>Where Creativity Meets Craftsmanship – Explore Decore Events for Top-Notch Decor Solutions.From Concept to Reality – Your Perfect Decor  Here Unleash Your Imagination – We Bring Your Decor Dreams to Life. Explore Our Services Today"</p>
+                              <h4><strong>Like</strong> <strong class="padd_right">Comment</strong></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end blog -->
+      <!-- says -->
+      <div class="says"  id="review" style="background-color: rgb(231, 137, 236);  border-bottom: 5px solid black;">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>What Is Says Our Welwishers</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="proj" class="carousel slide says_ban" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#proj" data-slide-to="0" class="active"></li>
+                        <li data-target="#proj" data-slide-to="1"></li>
+                        <li data-target="#proj" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption relative3">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="readert">
+                                          <div class="readert_img text_align_center">
+                                             <figure><img src="{% static 'assets/image/grv.jpeg'%}" alt="#"/></figure>
+                                          </div>
+                                          <div class="readert_text">
+                                             <h3>Gaurav Sharma</h3>
+                                             <p>"The birthday decoration was a complete hit! Everything looked so beautiful and <br>well-coordinated. I felt like a VIP at my own party. The attention to detail in<br> the decoration was outstanding. From the color scheme to the placement of <br>every element, it was all on point"</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption relative3">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="readert">
+                                          <div class="readert_img text_align_center">
+                                             <figure><img src="{% static 'assets/image/lata.jpeg'%}" alt="#"/></figure>
+                                          </div>
+                                          <div class="readert_text">
+                                             <h3>Lata Sandhu</h3>
+                                             <p>TThe decor was not only visually stunning but also personalized to reflect my style and<br> personality. It added a magical touch to my birthday celebration. I want to express my<br> heartfelt gratitude for the fantastic birthday decorations. It was the perfect <br>backdrop for creating cherished memories with my loved ones"</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption relative3">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="readert">
+                                          <div class="readert_img text_align_center">
+                                             <figure><img src="{% static 'assets/image/anu.jpeg'%}" alt="#"/></figure>
+                                          </div>
+                                          <div class="readert_text">
+                                             <h3>Anil Verma</h3>
+                                             <p>"The birthday decoration not only looked amazing but also set the mood for a fantastic<br> celebration. It was a day filled with joy and happiness. The attention to detail in <br>every aspect of the decoration was remarkable. It showed how much thought and effort <br>went into making my birthday special"</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#proj" role="button" data-slide="prev">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#proj" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end says -->
+      <!--  contact -->
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        <p>© Decore Event all Reserved.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'assets/js/js/jquery.min.js'%}"></script>
+      <script src="{% static 'assets/js/js/bootstrap.bundle.min.js'%}"></script>
+      <script src="{% static 'assets/js/js/jquery-3.0.0.min.js'%}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'assets/js/js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
+      <script src="{% static 'assets/js/js/custom.js'%}"></script>
+   </body>
+</html>

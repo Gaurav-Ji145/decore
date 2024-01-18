@@ -1,0 +1,244 @@
+{%  load static %}
+
+<!--suppress ALL -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decore Event</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/aos.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/main.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css'%}"/>
+
+
+    <script
+      src="https://kit.fontawesome.com/f5b6191954.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header id="header" style="background-image:url('/static/assets/image/bg-img.png');">
+        <div class="login">
+          <div class="login-left">
+            <div id="icon">
+
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div id="mail">
+              <i class="fa-solid fa-envelope"></i>
+              <p>gs1868022@gmail.com</p>
+            </div>
+          </div>
+          <div class="login-right">
+            <div id="add">
+              <i class="fa-solid fa-location-dot"></i>
+              <p><a href="https://www.google.com/maps/place/National+Skill+Training+Institute+for+Women/@28.5903482,77.3115001,15z/data=!4m6!3m5!1s0x390ce4f48ccfdc81:0x23b82756bfac9089!8m2!3d28.5903482!4d77.3115001!16s%2Fg%2F1vp6yktp?entry=ttu" style="color:black;">Noida</a></p>
+            </div>
+            <div class="login-acc">
+              <div class="select">
+                <i class="fa-solid fa-user"></i>
+               <p>Hi Decore Event</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <!-- <div class="nav"> -->
+          <div class="nav-left">
+            <a href="{% url 'main:index' %}">HOME</a>
+            <a href="#service">SERVICE</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#gal-img">GALLARY</a>
+          </div>
+          <div class="nav-middle">
+            <img class="logo" src="{% static 'assets/image/logo1.png'%}" alt="logo" />
+            
+          </div>
+          <div class="nav-right">
+            <a href="#videos">VIDEOS</a>
+            <a href="#inquary">CONTACT US</a>
+            <a href="{% url 'main:team' %}">OUR TEAM</a>
+            <a href="{% url 'main:signup_login' %}">LOGIN</a>
+          </div>
+          <!-- </div> -->
+        </nav>
+        <div class="ad">
+          <h2 id="dec">Decorators for</h2>
+          <h1 id="ad1">All Your Special Occasions</h1>
+        </div>
+      </header>
+      <section id="service">
+        <h2 id="ser">SERVICES</h2>
+        <div class="service">
+          <div class="ser">
+            <img class="img" src="{% static 'assets/image/Wedding.jpeg'%}" alt="" />
+            <h4>Wedding Party Decoration</h4>
+            <p>
+              Add charm to your wedding with our decoration expertise. We specialize in creating a captivating atmosphere. From beautiful flowers to enchanting lighting, we pay close attention to every detail. Collaborate with us to bring your vision to life, making your venue a reflection of your love story.
+            </p>
+            <button class="enqire"><a href="{% url 'main:wedding' %}" >More Detail</a></button>
+          </div>
+
+
+          <div class="ser">
+            <img class="img" src="{% static 'assets/image/Birthday.jpg'%}" alt="" />
+            <h4>Birthday Parties Decoration</h4>
+            <p>
+              Birthday party decorations make birthdays super fun! They involve colorful balloons, banners, and cool themes like superheroes or princesses. There's a yummy cake with candles, and the place is decorated with streamers and fun designs. It's all about making the birthday person feel really special and happy!
+            </p>
+            <button class="enqire"><a href="{% url 'main:birthday' %}" >More Detail</a></button>
+          </div>
+
+
+          <div class="ser">
+            <img class="img" src="{% static 'assets/image/katha.jpg'%}" alt="" />
+            <h4>Religious/Worship Event Decoration</h4>
+            <p> 
+              Religious event decorations create a peaceful and spiritual atmosphere. They often include sacred symbols, candles, and serene colors. The space is arranged to help people feel close to their beliefs. It's about making a place where everyone can connect with their faith and find inner peace.
+            </p>
+            <button class="enqire"><a href="{% url 'main:katha' %}">More Detail</a></button>
+          </div>
+
+
+          <div class="ser">
+            <img class="img" src="{% static 'assets/image/shokimage.jpg'%}" alt="" />
+            <h4>Shok Sabha(Condolence) Decoration</h4>
+            <p>
+              Shok Sabha, or condolence decoration, is a peaceful space honoring someone who passed away. It's adorned with flowers, candles, and photos, providing a comforting place for people to gather, share memories, and find solace together while paying their respects.
+            </p>
+            <button class="enqire"><a href="{% url 'main:shokseva' %}" >More Detail</a></button>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about">
+          <h2>ABOUT</h2>
+          <img id="ab-img" src="{% static 'assets/image/about.jpg'%}" alt="" />
+          <p id="ab-details">
+            We, Decore Events situated at Noida aim at providing and organizing unique weddings, theme decorations, destination weddings, floral arrangements, and various religious, cultural & social events. It is our experience that helps us in providing excellent personal service and individual attention. We can help with all aspects of your wedding and special celebratory occasions.
+          </p>
+        </div>
+      </section>
+      <section id="gal-img">
+        <h2>GALLARY</h2>
+        <div id="gallary">
+          <div class="gal">
+            <img class="gal-img" src="{% static 'assets/image/Wedding1.jpg'%}" alt="" />
+          </div>
+          <div class="gal">
+            <img class="gal-img" src="{% static 'assets/image/Birthday1.jpeg'%}" alt="" />
+          </div>
+          <div class="gal">
+            <img class="gal-img" src="{% static 'assets/image/peace3.jpeg'%}" alt="" />
+          </div>
+        </div>
+        <div id="gallary">
+          <div class="gal">
+            <img class="gal-img" src="{% static 'assets/image/katha2.jpeg'%}" alt="" />
+          </div>
+          <div class="gal">
+            <img class="gal-img" src="{% static 'assets/image/peace2.jpg'%}" alt="" />
+          </div>
+          <div class="gal">
+            <img class="gal-img" src="{% static 'assets/image/Birthday2.jpeg'%}" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="video">
+            <h2>VIDEOS</h2>
+            <div class="vid-up">
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/u-SjTRp_9JY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <p class="pr">Weddings Decoration Videos 2023</p>
+
+                </div>
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/uOYg65DVy2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   
+                    <p class="pr">Birthday Decoration Videos 2023</p>
+                </div>
+            </div>
+            <div class="vid-down">
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dsq6v7ne0Ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <p class="pr">Religious/Worship Event Decoration Videos 2023</p>
+                </div>
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/ixhoiFc5UoQ?si=qJCdXSxCqFWwrwvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   
+                    <p class="pr">Shok Sabha(Condolence) Decoration Videos 2023</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="inquary">
+        <div class="inq">
+            <H2>INQURY</H2>
+        <form method="post" action="{% url 'main:submit_form' %}">
+  {% csrf_token %}
+  <div class="inq-form">
+    <div class="inq-left">
+      {{ form.name.label_tag }}
+      <input type="text" name="name" id="id_name" placeholder="Name" value="{{ form.name.value }}">
+      {{ form.mobile_no.label_tag }}
+      <input type="text" name="mobile_no" id="id_mobile_no" placeholder="Mobile No." value="{{ form.mobile_no.value }}">
+      {{ form.email.label_tag }}
+      <input type="email" name="email" id="id_email" placeholder="Email" value="{{ form.email.value }}">
+    </div>
+    <div class="inq-right">
+      {{ form.message.label_tag }}
+      <textarea name="message" id="id_message" placeholder="Message">{{ form.message.value }}</textarea>
+    </div>
+  </div>
+  <div class="inq-btn">
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+
+        </div>
+      </section>
+      <footer>
+        <div class="ftr">
+ 
+          <div class="f-left">
+            <div class="right-up">
+              <div id="icon">
+
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            
+            </div>
+            <div class="right-down">
+              <p>© Copyrights 2022 - 2023. Decore Event. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Your HTML content here -->
+
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+      </footer>
+    </main>
+  </body>
+</html>

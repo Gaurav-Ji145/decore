@@ -1,0 +1,288 @@
+{%  load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Decoration</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style4.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/aos.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+
+</head>
+
+<body>
+    <header class="head">
+        <a href="{% url 'main:wedding' %}" class="logo"><i class="fas fa-heart"></i>&nbsp;<span>W</span>edding <span>D</span>ecoration&nbsp;<i class="fas fa-heart"></i></a>
+        <nav class="navbar ">
+            <a href="{% url 'main:index' %}" class="active">Home</a>
+            <a href="#service">Service</a>
+            <a href="#vendor">Vendors</a>
+            <a href="#venue">Venue</a>
+            <a href="#invite">E-invites</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+    </header>
+    <!---------------------------Home--------------------->
+    <section class="home" id="home"  style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('static/assets/image/back-1.jpg');">
+        <form action="">
+            <div class="search-box">
+                <h1>Wedding Decoration</h1>
+                <p>Find the best wedding vendors with thousands of trusted reviews</p>
+            </div>
+        </form>
+    </section>
+
+    <!------------------------services-------------------->
+    <section class="service" id="service">
+        <div class="title">
+            <h1><span>S</span>ervice</h1>
+        </div>
+        <div class="services-row">
+            <div class="services-col">
+                <i class="fas fa-book-open"></i>
+                <h2>invitation</h2>
+                <p>Join us in celebrating our love.Request your presence at our wedding.Our company is cherished.</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-camera"></i>
+                <h2>Photography & Video</h2>
+                <p>Capture your special day beautifully. Our photography and videography services ensure lasting memories of your wedding. Book us today!</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-brush"></i>
+                <h2>Beauty & Makeup</h2>
+                <p>Enhance your bridal beauty. Our expert makeup artists ensure you shine on your wedding day. Contact us for a flawless look!</p>
+            </div>
+            <div class="services-col">
+                <i class="fab fa-pagelines"></i>
+                <h2>Wedding flowers</h2>
+                <p>Elevate your wedding with stunning blooms. Our floral arrangements add elegance and charm to your special day. Contact us today!</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-birthday-cake"></i>
+                <h2>wedding cake</h2>
+                <p>Indulge in sweetness on your big day. Our wedding cakes are crafted with love and flavor to make your celebration perfect.</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-music"></i>
+                <h2>music band</h2>
+                <p>Set the tone with live music. Our band creates a memorable atmosphere for your wedding. Contact us for a harmonious experience.</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-utensils"></i>
+                <h2>Catering</h2>
+                <p>Savor delectable cuisine on your special day. Our catering service offers a feast of flavors to make your wedding memorable.</p>
+            </div>
+            <div class="services-col">
+                <i class="fas fa-ring"></i>
+                <h2>Jewellery</h2>
+                <p>Elevate your elegance with our exquisite jewelry. Discover the perfect pieces to adorn your beauty on your wedding day.</p>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------vendor------------------->
+    <section class="vendor" id="vendor">
+        <div class="title">
+            <h1><span>F</span>eatured <span>V</span>endor</h1>
+        </div>
+        <div class="vendor-list">
+            <div class="vendor-row">
+                <div class="rate">4.5&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="{% static 'assets/image/im1.jpg'%}" alt="img">
+                <h2>Beauty tales by komal rai</h2>
+                <p>Bridal Makeup</p>
+                <h3>Rs.20,000 onwards</h3>
+            </div>
+            <div class="vendor-row">
+                <div class="rate">4.2&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="{% static 'assets/image/im2.jpg'%}" alt="img">
+                <h2>Flinters Management</h2>
+                <p>Wedding Planner</p>
+                <h3>Rs.2.5-4 Lakh</h3>
+            </div>
+            <div class="vendor-row">
+                <div class="rate">5.0&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="{% static 'assets/image/im3.jpg'%}" alt="img">
+                <h2>Wedding Mela</h2>
+                <p>Wedding Decorators</p>
+                <h3>Rs.80,000-30,00,000</h3>
+            </div>
+            <div class="vendor-row">
+                <div class="rate">4.1&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="{% static 'assets/image/im4.jpg'%}" alt="img">
+                <h2>SeventhHeaven Wedding Company</h2>
+                <p>Wedding Decorators-Rental Only</p>
+                <h3>Rs.80,000 Onwards</h3>
+            </div>
+            <div class="vendor-row">
+                <div class="rate">4.3&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="{% static 'assets/image/im5.jpg'%}" alt="img">
+                <h2>Wedding Mela</h2>
+                <p>Wedding Decorators</p>
+                <h3>Rs.80,000-30,00,000</h3>
+            </div>
+            <div class="vendor-row">
+                <div class="rate">4.0&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="{% static 'assets/image/im6.jpg'%}" alt="img">
+                <h2>Wedding Mela</h2>
+                <p>Wedding Decorators</p>
+                <h3>Rs.1.8 Lakh</h3>
+            </div>
+        </div>
+    </section>
+    <!----------------------------venue Section-------------->
+    <section class="venue" id="venue">
+        <div class="title">
+            <h1><span>V</span>enues</h1>
+        </div>
+        <div class="venue-list">
+            <div class="venue-box">
+                <img src="{% static 'assets/image/venue-5.jpg'%}" alt="img">
+                <div class="venue-info">
+                    <h2>Goa</h2>
+                    <p>Azaya Beach Resort, Goa</p>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="{% static 'assets/image/venue-2.jpg'%}" alt="img">
+                <div class="venue-info">
+                    <h2>Jaipur</h2>
+                    <p>The Raj Palace</p>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="{% static 'assets/image/venue-3.jpg'%}" alt="img">
+                <div class="venue-info">
+                    <h2>Udaipur</h2>
+                    <p>Taj Aravalli Resort and Spa</p>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="{% static 'assets/image/venue-4.jpg'%}" alt="img">
+                <div class="venue-info">
+                    <h2>Thailand</h2>
+                    <p>Prince Palace Hotel</p>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="{% static 'assets/image/venue-5.jpg'%}" alt="img">
+                <div class="venue-info">
+                    <h2>Mumbai</h2>
+                    <p>Grand Banquet, Chembur</p>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="{% static 'assets/image/venue-6.jpg'%}" alt="img">
+                <div class="venue-info">
+                    <h2>Daman</h2>
+                    <p>The Deltin,Daman</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------E-invitation------------------>
+    <section class="invite" id="invite">
+        <div class="title">
+            <h1>Card<span>Design</span></h1>
+            <p>Choose the best card Design.</p>
+        </div>
+        <div class="invitation-row">
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-1.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-2.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-3.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-4.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-5.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-6.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-7.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-8.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-9.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-10.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-11.jpg'%}" alt="">
+            </div>
+            <div class="invitation-box">
+                <img src="{% static 'assets/image/card-12.jpg'%}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------footer section--------------------------->
+    <footer id="contact">
+        <div class="container">
+            <div class="f-container">
+                <h2>Wedding Decoration - Your Personal Wedding Planner</h2><br>
+                <p>Plan your wedding with Us Wedding Decoration is an Indian Wedding Planning Website </p>
+
+                <div class="social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="f-container">
+                <h2>Our Location</h2>
+                <a href="https://www.google.com/maps/place/Tulsi+Event+And+Decor+-+Wedding+Planner/@22.3226549,73.1950503,17z/data=!3m1!4b1!4m6!3m5!1s0x395fcf118eeac7fd:0x33f7d1d128f7213c!8m2!3d22.32265!4d73.1976252!16s%2Fg%2F11j017tpr7?entry=ttu"><i class="fas fa-angle-right"></i>Vadodara</a>
+                <a href="https://www.google.com/maps/place/National+Decorators+-+Wedding+Decorators+%26+Planners/@19.1009813,72.8401437,17z/data=!3m2!4b1!5s0x3be7c9b6e26b9e31:0xff0a7bf05bca2ff1!4m6!3m5!1s0x3be7c9c9b15729f1:0x2f2a139c966f2943!8m2!3d19.1009762!4d72.8427186!16s%2Fg%2F1tgm19wt?entry=ttu"><i class="fas fa-angle-right"></i>Mumbai</a>
+                <a href="https://www.google.com/maps/place/Mahi+Events+-+Wedding+planner+%7C+Catering+%7C+Bride+Groom+Varmala+Entry/@22.9946652,72.6115857,17z/data=!3m1!4b1!4m6!3m5!1s0x395e85e1cf017d91:0xe2bedd573877f1d1!8m2!3d22.9946603!4d72.6141606!16s%2Fg%2F1ptz3lvjg?entry=ttu"><i class=" fas fa-angle-right "></i>Ahemdabad</a>
+                <a href="https://www.google.com/maps/place/Sunrise+Events+:+Destination+Wedding+Planner+in+Surat+%7C%7C+Best+wedding+planner+in+Surat/@21.1372927,72.7674943,17z/data=!3m1!4b1!4m6!3m5!1s0x3be0531ebc3f4def:0x1dc50c90a0266b8a!8m2!3d21.1372877!4d72.7700692!16s%2Fg%2F11h_k34rd1?entry=ttu"><i class="fas fa-angle-right "></i>Surat</a>
+                </div>
+            </div>
+        <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </footer>
+        <div class="copyright ">
+           <p>© Decore Event all Reserved.</p>
+        </div>
+</body>
+<script>
+     let menu = document.querySelector('#menu-bar');
+    let head = document.querySelector('.head .navbar');
+
+    menu.onclick = () => {
+        head.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+        head.classList.remove('active');
+        if (window.scrollY > 60) {
+            document.querySelector('#menu-bar').classList.add('active');
+        } else {
+            document.querySelector('#menu-bar').classList.remove('active');
+        }
+    };
+</script>    
+</html>
